@@ -1,0 +1,22 @@
+.inner_table {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(141, 140, 139);
+}
+
+#table_title {
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    display: flex;
+    padding-left: 170%;
+    text-align: center;
+    
+}
+
+#table_title_text{
+    align-items: center;
+    margin-right: 50%;
+}
