@@ -1,0 +1,77 @@
+table, tr, td, th {
+  border: 2px solid black;
+  border-collapse:collapse;
+}
+
+
+.teach_name, .class_codes, .class_ids, .class_ids_2, .class_ids_3 {
+  margin: 0%;
+}
+
+
+
+#table_title {
+    border: 0px;
+    width: 1182%;
+    display: flex;
+    padding-left: 960%;
+    height: 20px;
+    background-color: rgb(221, 220, 220);
+
+}
+
+#remove_border{
+    border: 0px;
+}
+
+
+#title_h4{
+    height: 10%;
+    margin-top: -1%;
+}
+
+
+
+.teach_name{
+    height: 1px;
+}
+
+.class_codes{
+    margin-bottom: -6%;
+}
+
+
+.class_ids{
+    font-size: 20px;
+    height: 1px;
+}
+
+.class_ids_2{
+    font-size: 20px;
+    margin-bottom: -7%;
+
+}
+
+.class_ids_3{
+     font-size: 20px;
+}
+
+.table_border_names{
+    justify-items: center;
+}
+
+.room_number{
+    padding-left: 63%;
+}
+
+
+.week_lines, .week_lines_fix{
+     background-color: rgb(221, 220, 220);
+}
+
+.week_lines_fix{
+    width: 5%;
+}
+
+
+
