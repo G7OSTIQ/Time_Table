@@ -1,0 +1,44 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#forms_name{
+    transform: none;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    
+}
+
+#submitting{
+background-color: aqua;
+}
+
+.form_divs{
+    background-color: aliceblue;
+    width: 80%;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.texy_input{
+    width: 100%;   
+    height: 25px;
+    border: 1px solid rgb(82, 82, 82);
+     border-collapse:collapse;
+}
+
+#age_css, #offers{
+transform: none;
+text-align: center;
+margin: 0%;
+}
