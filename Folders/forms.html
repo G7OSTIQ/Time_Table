@@ -1,114 +1,156 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forms</title>
-        <link rel="stylesheet" href="/Folders/form css/style_form.css">
-        <script href="/Folders/java/form_java.js"></script>
-        
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!--CTRL+P shows more commands for the code-->
-        
-        <h1 id="forms_name"> Forms </h1>
-        
-        <!--mailto:asdf@qwert.com is like a placeholder when opening an email form-->
-        <form action="mailto:asdf@qwert.com"
-        method="post" enctype="text/plain">  <!--get means it's getting information/ post means it's getting posted/ enctype="text/plain" meaning it makes the form look better-->
-        
-        <fieldset class="form_divs"> <!-- this addes a boarder around the form-->
-            <legend>Personal Information</legend> <!-- this can add a text on the baorder line-->
-            <div>
-                <label for="username">Username: </label> <!--for = is used with the id or name for user can press on the text-->
-                <input type="text" placeholder="Please enter your name" class="texy_input"id="username" name="username">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/Folders/form css/style_form.css">
+    <script href="/Folders/java/form_java.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!--CTRL+P shows more commands for the code-->
+
+    <h1 id="forms_name"> Contact Form </h1>
+
+    <!--mailto:asdf@qwert.com is like a placeholder when opening an email form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ">
+                <form action="mailto:asdf@qwert.com" method="post" enctype="text/plain">
+                    <!--get means it's getting information/ post means it's getting posted/ enctype="text/plain" meaning it makes the form look better-->
+
+                    <fieldset class="form_divs"> <!-- this addes a boarder around the form-->
+                        <legend>Personal Information</legend> <!-- this can add a text on the baorder line-->
+                        <div class="formbox">
+                            <label for="username">Username: </label>
+                            <!--for = is used with the id or name for user can press on the text-->
+                            <div class="text_input"> <input type="text" placeholder="Please enter your name" class="texy_input" id="username"
+                                name="username"> </div>
+                        </div>
+                        <br>
+                        <div class="formbox">
+                            <label for="surname">Surname: </label>
+                            <div class="text_input"><input type="text" placeholder="Please enter your Surname" class="texy_input" id="surname"
+                                name="surname"> </div>
+                        </div>
+                        <br>
+                        <div id="age_css">
+                            <p>Age Group</p>
+                            <input type="radio" id="age11" name="age" value="1">
+                            <!-- type radio give out a circle button/ age groups all the same name-->
+                            <label for="age11">11-18 </label>
+                            <br>
+                            <input type="radio" id="age18" name="age" value="2">
+                            <!-- the value will be saved into a list-->
+                            <label for="age18">18-25 </label>
+                            <br>
+                            <input type="radio" id="age25" name="age" value="3">
+                            <label for="age18">25-35 </label>
+                            <br>
+                            <input type="radio" id="age35" name="age" value="4">
+                            <label for="age18">35-45 </label>
+                            <br>
+                            <input type="radio" id="age45" name="age" value="5">
+                            <label for="age18">45-55 </label>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="form_divs2">
+                        <legend> Contact Details</legend>
+
+                        <div class="formbox">
+                            <label for="email">Email Address:</label>
+                            <div class="text_input"><input type="email" placeholder="Please enter your email" class="texy_input" name="email"
+                                id="email"> </div>
+                        </div>
+                        <br>
+                        <div class="formbox">
+                            <label for="phone">Phone Number: </label>
+                            <div class="text_input"> <input type="tel" placeholder="Enter your phone number" class="texy_input" id="phone"
+                                name="phone" pattern="[0-9]{4} [0-9]{4}"> </div>
+                            <!--tel meaning telephone input/ [0-9] meaning any number from 0 to 9 {4} meaning can be only add 4 numbers-->
+                        </div>
+                        <br>
+                        <div id="offers">
+                            <input type="checkbox" name="offers" id="offers"> <!--checkbox outputs a checkbox to user-->
+                            <label for="offers"> Offer me for offers</label>
+                        </div>
+
+                    </fieldset>
+                    <br>
+
+                    <fieldset class="form_divs3">
+                        <legend> Message Details</legend>
+
+                        <div class="formbox">
+                            <label for="departments">Departments</label>
+                            <div class="text_input"> <select class="texy_input" name="departments" id="departments"> 
+                                <!--shows a drop down menu-->
+                                <option value="" disabled selected>Please select a department</option>
+                                <!--disabled makes that item not active disabled selected will select that select option by default-->
+                                <option value="1">Customer Support</option>
+                                <!-- option is used for the drop down list -->
+                                <option value="2">Techincal Support</option>
+                                <option value="3">Sales</option>
+                            </select>
+                            </div>
+
+                        </div>
+
+                        <div class="formbox">
+                            <label for="subject">Subject</label>
+                            <div class="text_input"> <input type="text" class="texy_input" id="subject" name="subject"  placeholder="Please Help">
+                                </div>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea type="message" id="message" placeholder="I Have a promblem with my account."
+                                cols="38" rows="5"></textarea>
+                            <!--cols sets the size landscape and rows also sets the size -->
+                        </div>
+
+                    </fieldset>
+
+                    <div class="row">
+                        <div class="col-6">
+                        <button class="buttonstyle" type="reset">Cancel</button> <!--reset will reset the form while submite will submit--></div>
+                         <div class="col-6">
+                        <button class="buttonstyle" type="submit" id="submitting">Submit</button></div>
+                    </div>
+
+
+
             </div>
-            <br>
-            <div>
-                <label for="surname">Surname: </label>
-                <input type="text" placeholder="Please enter your Surname"  class="texy_input" id="surname" name="surname">
+            <div class="col-6">
+                <h1>Our Building</h1>
+                <div class="images1">
+                    <img src="/Folders/images/istockphoto-511061090-612x612.jpg" alt="">
+                </div>
+                <h1>Our location</h1>
+                <div class="images1">
+                    <img src="/Folders/images/unnamed.jpg" alt="">
+                </div>
             </div>
-            <br>
-            <div id="age_css">
-                <p>Age Group</p>
-                <input type="radio" id="age11" name="age" value="1"> <!-- type radio give out a circle button/ age groups all the same name-->
-                <label for="age11">11-18 </label>
-                <br>
-                <input type="radio" id="age18" name="age" value="2"> <!-- the value will be saved into a list-->
-                <label for="age18">18-25 </label>
-                <br>
-                <input type="radio" id="age25" name="age" value="3"> 
-                <label for="age18">25-35 </label>
-                <br>
-                <input type="radio" id="age35" name="age" value="4"> 
-                <label for="age18">35-45 </label>
-                <br>
-                <input type="radio" id="age45" name="age" value="5"> 
-                <label for="age18">45-55 </label>
-            </div>
-        </fieldset>
-        <br>
-        <fieldset class="form_divs">
-            <legend> Contact Details</legend>
-            
-            <div>
-                <label for="email">Email Address:</label>
-                <input type="email" placeholder="Please enter your email" class="texy_input" name="email" id="email">
-            </div>
-            <br>
-            <div>
-                <label for="phone">Phone Number: </label>
-                <input type="tel" placeholder="Enter your phone number"  class="texy_input" id="phone" name="phone" pattern="[0-9]{4} [0-9]{4}"> <!--tel meaning telephone input/ [0-9] meaning any number from 0 to 9 {4} meaning can be only add 4 numbers-->
-            </div>
-            <br>
-            <div id="offers">
-                <input type="checkbox" name="offers" id="offers"> <!--checkbox outputs a checkbox to user-->
-                <label for="offers"> Offer me for offers</label>
-            </div>
-            
-        </fieldset>
-        <br>
-        
-        <fieldset class="form_divs">
-            <legend> Message Details</legend>
-            
-            <div>
-                <label for="departments">Departments</label>
-                <select class="texy_input" name="departments" id="departments"> <!--shows a drop down menu-->
-                    <option value="" disabled selected>Please select a department</option> <!--disabled makes that item not active disabled selected will select that select option by default-->
-                    <option value="1">Customer Support</option> <!-- option is used for the drop down list -->
-                    <option value="2">Techincal  Support</option>
-                    <option value="3">Sales</option>
-                </select>
-                
-            </div>
-            
-            <div>
-                <label for="subject">Subject</label>
-                <input type="text" class="texy_input" id="subject" name="subject" placeholder="Please Help">
-            </div>
-            
-            <div>
-                <label for="message">Message</label>
-                <textarea type="message" id="message"  
-                placeholder="I Have a promblem with my account."
-                cols="=38" rows="10"></textarea> <!--cols sets the size and rows also sets the size -->
-            </div>
-            
-        </fieldset>
-        
-        <div>
-            <button type="reset">Cancel</button> <!--reset will reset the form while submite will submit-->
-            <button type="submit" id="submitting">Submit</button>
         </div>
-        
-        
-        
-        
-        
+    </div>
     </form>
-    
-    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,11 +1,20 @@
 
 body{
-    background-color: rgb(255, 255, 255);
-display: block;
+    background-color: rgb(219, 219, 219) !important;
+    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.formbox{
+    margin-left: 30px;
+}
+
+legend{
+    margin-left: 30px;
 }
 
 
@@ -14,7 +23,11 @@ display: block;
     align-items: center;
     text-align: center;
     margin: 0;
-    
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+    height: 70px;
+    padding-top: 10px;
+    color: aliceblue;
 }
 
 #submitting{
@@ -23,11 +36,29 @@ background-color: aqua;
 
 .form_divs{
     background-color: aliceblue;
-    width: 80%;
+    width: 100%;
     border-color: black;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 15px 15px 0px 0px ;
+    height: 380px;
+}
+
+.form_divs2{
+    background-color: aliceblue;
+    width: 100%;
+    border-color: black;
+    border: 2px solid black;
+    height: 230px;
     
+}
+
+.form_divs3{
+    background-color: aliceblue;
+    width: 100%;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 0px 0px 15px 15px ;
+    height: 310px;
 }
 
 .texy_input{
@@ -41,4 +72,29 @@ background-color: aqua;
 transform: none;
 text-align: center;
 margin: 0%;
+}
+
+.buttons{
+    padding-top: 3px;
+}
+
+.buttonstyle{
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.formbox{
+ transform: none;
+    align-items: center;
+    justify-items: center;
+}
+
+.text_input{
+    width: 90%;
 }
