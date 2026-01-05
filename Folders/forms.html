@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="/Folders/form css/style_form.css">
-    <script href="/Folders/java/form_java.js"></script>
+    <script href="java/form_java.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -23,6 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6 ">
+                
                 <form action="mailto:asdf@qwert.com" method="post" enctype="text/plain">
                     <!--get means it's getting information/ post means it's getting posted/ enctype="text/plain" meaning it makes the form look better-->
 
@@ -125,7 +126,7 @@
                         <div class="col-6">
                         <button class="buttonstyle" type="reset">Cancel</button> <!--reset will reset the form while submite will submit--></div>
                          <div class="col-6">
-                        <button class="buttonstyle" type="submit" id="submitting">Submit</button></div>
+                        <button class="buttonstyle" onclick="validation();"  type="submit" id="submitting">Submit</button></div>
                     </div>
 
 
@@ -144,6 +145,10 @@
         </div>
     </div>
     </form>
+
+    <div id="errorDiv" class="hidden">
+        <ul id="errorList"></ul>
+    </div>
 
 
 
